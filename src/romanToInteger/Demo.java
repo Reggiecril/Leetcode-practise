@@ -4,6 +4,18 @@ import java.util.HashMap;
 
 public class Demo {
 
+	/**
+	 * Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+	 * For example, two is written as II in Roman numeral, just two one's added together. 
+	 * Twelve is written as, XII, which is simply X + II. 
+	 * The number twenty seven is written as XXVII, which is XX + V + II.
+	 * 
+	 * Input: "MCMXCIV"
+	 * Output: 1994
+	 * Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+	 * @param s
+	 * @return
+	 */
 	
 	public int romanToInt(String s) {
 		HashMap<String,Integer> map=new HashMap<String,Integer>();
