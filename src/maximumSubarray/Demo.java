@@ -15,16 +15,19 @@ public class Demo {
 			subLength = nums.length / 2;
 		} else if(nums.length==1){
 			subLength=nums.length;
-			return nums[1];
+			return nums[0];
 		}else {
 			subLength = (nums.length - 1) / 2;
 		}
 		int total = 0;
-		for (int x = 0; x < nums.length - subLength; x++) {
+		for (int x = 0; x <= nums.length - subLength; x++) {
 			int singal = 0;
+			
 			for (int i = 0; i < subLength; i++) {
 				singal += nums[x+i];
 			}
+			if(x==0)
+				total=singal;
 			if(total<=singal) {
 				total=singal;
 			}else {
@@ -40,7 +43,7 @@ public class Demo {
 	public static void main(String[] args) {
 		Demo demo = new Demo();
 
-		int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+		int[] nums = {-1,-2};
 		System.out.println(demo.maxSubArray(nums));
 	}
 
