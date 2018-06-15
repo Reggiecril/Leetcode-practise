@@ -139,6 +139,7 @@ public class Demo {
 		for(int i:num)
 			System.out.print(i+",");
 		//bubbleSort
+		
 		demo.bubbleSort();
 		//selectionSort
 		demo.selectionSort();
