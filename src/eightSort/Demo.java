@@ -73,13 +73,13 @@ public class Demo {
 	private void insertSort() {
 		// set array
 		int[] num = { 123, 23, 12, 32, 43, 12, 5, 4, 67, 678, 945, 623, 46754, 57, 656, 3, 32 };
-		//loop without first index
+		// loop without first index
 		for (int i = 1; i < num.length; i++) {
-			//keep num[i]'s value
+			// keep num[i]'s value
 			int temp = num[i];
-			//loop to get index 
+			// loop to get index
 			while (i >= 1 && num[i - 1] > temp) {
-				//move 
+				// move
 				num[i] = num[i - 1];
 				i--;
 			}
@@ -96,11 +96,53 @@ public class Demo {
 		System.out.println("]");
 	}
 
-	public static void main(String[] args) {
+	// 快速排序
+	private void quickSort(int[] num, int L, int R) { 
+		//keep L
+		int i = L;
+		//keep R
+		int j = R;
+		
+		//get the middle point of array
+		int middle = num[(L + R) / 2];
+		
+		//split array to two parts beside middle point
+		while (i <= j) {
+			//find a point which is lower than middle point 
+			while (middle > num[i])
+				i++;
+			//find a point which is bigger than middle point 
+			while (middle < num[j])
+				j--;
+			//replace point i and point j
+			if (i <= j) {
+				int temp = num[i];
+				num[i] = num[j];
+				num[j] = temp;
+				i++;
+				j--;
+			}
+		}
+		//recursion
+		if (i < R)
+			quickSort(num, L, j);
+		//recursion
+		if (j > L)
+			quickSort(num, i, R);
+	}
 
-		Demo demo = new Demo();
+	public static void main(String[] args) {
+		Demo demo = new Demo();// set array
+		//quick sort
+		int[] num = { 123, 23, 12, 32, 43, 12, 5, 4, 67, 678, 945, 623, 46754, 57, 656, 14, 32 };
+		demo.quickSort(num, 0, 16);
+		for(int i:num)
+			System.out.print(i+",");
+		//bubbleSort
 		demo.bubbleSort();
+		//selectionSort
 		demo.selectionSort();
+		//insertSort
 		demo.insertSort();
 
 	}
