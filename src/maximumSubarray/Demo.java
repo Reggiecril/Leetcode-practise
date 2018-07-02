@@ -39,12 +39,46 @@ public class Demo {
 		return total;
 
 	}
-
+	 public int maxSubArray1(int[] nums) {
+	   	    int subLength=(int)(nums.length/2);
+	        int max=0;
+	        if(nums.length!=0&&nums!=null){
+	        	
+	            if(nums.length==1)
+	                return nums[0];
+	            if(nums.length==2) {
+	            	 for(int i=0;i<nums.length;i++){
+	     
+	 	                int total=0;
+	 	                for(int j=0;j<1;j++){
+	 	                    total+=nums[i+j];
+	 	                }
+	 	                
+	 	                if(i==0)
+	 	                	max=total;
+	 	                else if(max<total)
+	 	                    max=total;
+	 	            }
+	            	 return max;
+	            }
+	            for(int i=0;i<nums.length-subLength;i++){
+	                int total=0;
+	                for(int j=0;j<subLength;j++){
+	                    total+=nums[i+j];
+	                }
+	                if(max<total)
+	                    max=total;
+	            }
+	        }
+	        
+			return max;
+	        
+	    }
 	public static void main(String[] args) {
 		Demo demo = new Demo();
 
-		int[] nums = {-1,-2};
-		System.out.println(demo.maxSubArray(nums));
+		int[] nums = {-2,-1};
+		System.out.println(demo.maxSubArray1(nums));
 	}
 
 }
