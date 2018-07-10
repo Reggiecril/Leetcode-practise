@@ -43,7 +43,7 @@ public class Demo {
 		}
 		return min;
 	}
-
+	public boolean isBadVersion(int number) {return true;}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
