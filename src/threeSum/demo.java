@@ -1,78 +1,83 @@
 package threeSum;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
+/**
+ * 
+ * @author reggie
+ *
+ */
 public class demo {
+	/**
+	 * 
+	 * Given an array nums of n integers, are there elements a, b, c in nums such
+	 * that a + b + c = 0? Find all unique triplets in the array which gives the sum
+	 * of zero.
+	 * 
+	 * Given array nums = [-1, 0, 1, 2, -1, -4],
+	 * 
+	 * A solution set is: [ [-1, 0, 1], [-1, -1, 2] ]
+	 * 
+	 * @param nums
+	 * @return
+	 */
 	public List<List<Integer>> threeSum(int[] nums) {
-		List<Integer> intList = new ArrayList<>();
-		if (nums.length < 3)
-			return new ArrayList<>();
-		else {
-			for (int i : nums)
-				intList.add(i);
-			List<List<Integer>> lastList = new ArrayList<>();
-			for (int q = 0; q < nums.length; q++) {
-				for (int w = q + 1; w < nums.length; w++) {
-					int start = nums[q];
-					int middle = nums[w];
-					int end = -(start + middle);
-					if (start == 0 && middle == 0 && end == 0) {
-						List<Integer> array = new ArrayList<>();
-						array.add(nums[q]);
-						array.add(nums[w]);
-						array.add(end);
-						lastList.add(array);
-						return lastList;
-					}
+		List<List<Integer>> lastList = new ArrayList<List<Integer>>();
+		Arrays.sort(nums);
+		for (int i = 0; i < nums.length - 2; i++) {
+			if (i > 0 && nums[i] == nums[i - 1])
+				continue;
+			int left = i + 1, right = nums.length - 1, target = i;
+			while (left < right) {
+				if (nums[left] + nums[right] + nums[target] == 0) {
+					List<Integer> firstList = new ArrayList<Integer>();
+					firstList.add(nums[target]);
+					firstList.add(nums[left]);
+					firstList.add(nums[right]);
+					lastList.add(firstList);
 
-					if (intList.contains(end)) {
-						if (end != start && end != middle) {
-							if(start!=0&&middle!=0&&end!=0) {
-							if (lastList.size() == 0) {
-								List<Integer> array = new ArrayList<>();
-								array.add(start);
-								array.add(middle);
-								array.add(end);
-								lastList.add(array);
-							} else {
-								int xe = 0;
-								for (int i = 0; i < lastList.size(); i++) {
-									List<Integer> singalList = lastList.get(i);
-									if (singalList.contains(start) && singalList.contains(middle)
-											&& singalList.contains(end)) {
-										xe = 0;
-										continue;
-									} else if (lastList.size() == 2) {
-										continue;
-									} else {
-										xe = 1;
-										List<Integer> array = new ArrayList<>();
-										array.add(nums[q]);
-										array.add(nums[w]);
-										array.add(end);
-										lastList.add(array);
+					while (left < right && nums[left] == nums[left + 1])
+						left++;
+					while (left < right && nums[right] == nums[right - 1])
+						right--;
 
-									}
-									System.out.println(xe);
-								}
-
-							}
-						}
-						}
-					}
-
+					left++;
+					right--;
+				} else if (nums[left] + nums[right] + target < 0) {
+					left++;
+				} else {
+					right--;
 				}
 			}
-
-			return lastList;
 		}
+
+	// List<List<Integer>> lastList = new ArrayList<List<Integer>>();
+	// for (int i = 0; i < nums.length; i++) {
+	// for (int j = i + 1; j < nums.length; j++) {
+	// for (int k = j + 1; k < nums.length; k++) {
+	// if (nums[i] + nums[j] + nums[k] == 0) {
+	// List<Integer> firstList = new ArrayList<Integer>();
+	// firstList.add(nums[i]);
+	// firstList.add(nums[j]);
+	// firstList.add(nums[k]);
+	// Collections.sort(firstList);
+	// if (!lastList.contains(firstList))
+	// lastList.add(firstList);
+	// }
+	// }
+	// }
+	// }
+	return lastList;
+
 	}
 
 	public static void main(String[] args) {
 
 		demo d = new demo();
-		int[] nums = { 0, 0, 0 };
+		int[] nums = { 1,-1,-1,0 };
 		d.threeSum(nums);
 
 		for (int i = 0; i < d.threeSum(nums).size(); i++)
