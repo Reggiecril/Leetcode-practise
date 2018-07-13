@@ -17,31 +17,39 @@ public class Demo {
 	 * @return
 	 */
 	public ListNode removeElements(ListNode head, int val) {
-		ListNode list = new ListNode(0);
-		list.next = head;
-		if (head == null)
-			return head;
-		if (head.next == null && head.val == val)
+//		ListNode list = new ListNode(0);
+//		list.next = head;
+//		if (head == null)
+//			return head;
+//		if (head.next == null && head.val == val)
+//			return null;
+//		ListNode pre = list;
+//		ListNode cur = pre.next;
+//
+//		while (cur != null) {
+//			if (cur.val == val) {
+//				pre.next = cur.next;
+//				cur = cur.next;
+//			} else {
+//				pre = cur;
+//				cur = cur.next;
+//			}
+//		}
+//		return list.next;
+		if(head==null)
 			return null;
-		ListNode pre = list;
-		ListNode cur = pre.next;
-
-		while (cur != null) {
-			if (cur.val == val) {
-				pre.next = cur.next;
-				cur = cur.next;
-			} else {
-				pre = cur;
-				cur = cur.next;
-			}
-		}
-		return list.next;
+		head.next=removeElements(head.next,val);
+		if(head.val==val)
+			return head.next;
+		else
+			return head;
 	}
 
 	public static void main(String[] args) {
 		Demo demo = new Demo();
 		ListNode list = new ListNode(1);
-		System.out.println(demo.removeElements(list, 2).val);
+		list.next=new ListNode(2);
+		System.out.println(demo.removeElements(list, 1).val);
 	}
 
 }
