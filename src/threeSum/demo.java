@@ -46,7 +46,7 @@ public class demo {
 
 					left++;
 					right--;
-				} else if (nums[left] + nums[right] + target < 0) {
+				} else if (nums[left] + nums[right] + nums[target] < 0) {
 					left++;
 				} else {
 					right--;
