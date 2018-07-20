@@ -1,5 +1,7 @@
 package guessNumberHigherOrLower;
 
+import java.util.Random;
+
 /**
  * 
  * @author reggie
@@ -38,5 +40,15 @@ public class Demo {
 				before = number - 1;
 		}
 		return now;
+	}
+	Random random=new Random();
+	int ren=random.nextInt();
+	public int guess(int number) {
+		if(ren>number)
+			return -1;
+		else if(ren<number)
+			return 1;
+		else 
+			return 0;
 	}
 }
