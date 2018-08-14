@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1da777ef-ad22-4d21-bb2e-778d0e8b3d28" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mergeIntervals/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/partition/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -24,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mergeIntervals/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
@@ -32,6 +32,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/partition/Demo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="9" column="98" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -53,6 +62,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/permutations/Demo.java" />
         <option value="$PROJECT_DIR$/src/mergeIntervals/Demo.java" />
+        <option value="$PROJECT_DIR$/src/partition/Demo.java" />
       </list>
     </option>
   </component>
@@ -93,13 +103,7 @@
               <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="addString" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bestTimeToBuyAndSellStock" type="462c0819:PsiDirectoryNode" />
+              <item name="mergeSortedArray" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -184,12 +188,12 @@
       <updated>1534145439757</updated>
       <workItem from="1534145445183" duration="813000" />
       <workItem from="1534219994715" duration="85000" />
-      <workItem from="1534220132356" duration="1288000" />
+      <workItem from="1534220132356" duration="2012000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2186000" />
+    <option name="totallyTimeSpent" value="2910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="291" y="69" width="1508" height="996" extended-state="0" />
@@ -259,6 +263,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/partition/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="98" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="98" />
         </state>
       </provider>
     </entry>
