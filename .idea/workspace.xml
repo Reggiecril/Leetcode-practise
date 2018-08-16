@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1da777ef-ad22-4d21-bb2e-778d0e8b3d28" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sortColors/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sumRootToLeafNumbers/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二叉树的镜像/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -16,20 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sortColors/Demo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sumRootToLeafNumbers/Demo.java">
+        <entry file="file://$PROJECT_DIR$/src/二叉树的镜像/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+            <state relative-caret-position="225">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -58,6 +48,7 @@
         <option value="$PROJECT_DIR$/src/spiralMatrix/Demo.java" />
         <option value="$PROJECT_DIR$/src/sortColors/Demo.java" />
         <option value="$PROJECT_DIR$/src/sumRootToLeafNumbers/Demo.java" />
+        <option value="$PROJECT_DIR$/src/二叉树的镜像/Demo.java" />
       </list>
     </option>
   </component>
@@ -191,12 +182,12 @@
       <workItem from="1534219994715" duration="85000" />
       <workItem from="1534220132356" duration="3908000" />
       <workItem from="1534304814711" duration="2940000" />
-      <workItem from="1534391756579" duration="1421000" />
+      <workItem from="1534391756579" duration="2202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9167000" />
+    <option name="totallyTimeSpent" value="9948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="291" y="69" width="1508" height="996" extended-state="0" />
@@ -315,6 +306,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sumRootToLeafNumbers/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sortColors/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -322,10 +320,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sumRootToLeafNumbers/Demo.java">
+    <entry file="file://$PROJECT_DIR$/src/二叉树的镜像/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        <state relative-caret-position="225">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
         </state>
       </provider>
     </entry>
