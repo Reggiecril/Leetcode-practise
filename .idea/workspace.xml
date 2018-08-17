@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1da777ef-ad22-4d21-bb2e-778d0e8b3d28" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/rotateList/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uniquePathII/Demo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rotateList/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -24,6 +23,15 @@
                 <element signature="e#793#794#0" expanded="true" />
                 <element signature="e#816#817#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/uniquePathII/Demo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -54,6 +62,7 @@
         <option value="$PROJECT_DIR$/src/sumRootToLeafNumbers/Demo.java" />
         <option value="$PROJECT_DIR$/src/二叉树的镜像/Demo.java" />
         <option value="$PROJECT_DIR$/src/rotateList/Demo.java" />
+        <option value="$PROJECT_DIR$/src/uniquePathII/Demo.java" />
       </list>
     </option>
   </component>
@@ -188,12 +197,12 @@
       <workItem from="1534220132356" duration="3908000" />
       <workItem from="1534304814711" duration="2940000" />
       <workItem from="1534391756579" duration="2855000" />
-      <workItem from="1534477929688" duration="205000" />
+      <workItem from="1534477929688" duration="879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10806000" />
+    <option name="totallyTimeSpent" value="11480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="291" y="69" width="1508" height="996" extended-state="0" />
@@ -209,10 +218,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3290993" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.26671213" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.26671213" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -348,6 +357,13 @@
             <element signature="e#793#794#0" expanded="true" />
             <element signature="e#816#817#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uniquePathII/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
